@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleSergio.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navMenu">
+      <a href="trelloSergio.html"><img src="img/logo.gif" class="logo" /></a>
+      <a class="enlaces" href="#">Home</a>
+      <a class="enlaces" href="#">Blog</a>
+      <a class="enlaces" href="#">Work</a>
+      <a class="enlaces" href="index.html">Cerrar sesion</a>
+      <button class="addForm" id="addForm">Añadir tarjeta</button>
+      <form action="" class="formulario" id="formulario" method="post">
+        <input
+          type="text"
+          id="nombreTarjeta"
+          placeholder="Nombre Tarjeta"
+          class="texto"
+        />
+      </form>
+      <input value="Añadir" class="addForm" id="enviar" type="submit" />
+      <button class="addForm" id="cambiarFondo">Cambiar fondo</button>
+
+      <select id="fondoSelect" class="selectFondo" name="select">
+        <option value="img/fondo.jpg">Barranco</option>
+        <option value="img/fondo2.jpg">Elefante</option>
+        <option value="img/fondo3.jpg">Carretera</option>
+        <option value="img/fondo4.jpg">Flor</option>
+        <option value="img/fondo5.jpg">Canoa</option>
+      </select>
+
+    </nav>
+
+    <div class="contenedor" id="contenedor"></div>
+
+    <script src="SergioDom.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- pantalla de error script -->
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registro</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #037ec5;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <section class="mt-5">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-5">
+              <img src="img/registro.png" class="img-fluid"
+                alt="Sample image">
+            </div>
+            <div class="col-xl-4">
+              <form id="formRegistro">
+                
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <p class="lead fs-3 mb-4">REGISTRO</p>
+                  </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label">Usuario</label>
+                  <input type="email" id="usuarioRegistro" class="form-control form-control-lg"
+                    placeholder="Nombre usuario" maxlength="26" />
+                </div>
+      
+                <div class="form-outline mb-3">
+                    <label class="form-label">Contraseña</label>
+                  <input type="password" maxlength="8" id="contraRegistro" class="form-control form-control-lg"
+                    placeholder="Contraseña" />
+                </div>  
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" id="registro" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Registrarse</button>
+                    <p class="small fw-bold mt-2 pt-1 mb-0">Volver al login <a href="index.html"
+                        class="link-info">Volver</a></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="registro.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+  </body>
+</html>
